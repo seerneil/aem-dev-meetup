@@ -29,6 +29,6 @@ main .hero-container {
 
 .hero img {
   object-fit: contain;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
