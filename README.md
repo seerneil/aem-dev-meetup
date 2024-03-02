@@ -1,9 +1,9 @@
-# Your Project's Title...
-Your project's description...
+# AEM Developer Meetup Site
+Our goal is to create an engaging and user-friendly website for hosting developer meetup events. This platform will serve as a centralized hub for tech enthusiasts, software developers, and industry professionals to connect, collaborate, and learn from one another. The website will feature a comprehensive event calendar, an interactive discussion forum, and a directory of local tech communities.
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--aem-dev-meetup--seerneil.hlx.page/
+- Live: (https://main--aem-dev-meetup--seerneil.hlx.)live/
 
 ## Installation
 
