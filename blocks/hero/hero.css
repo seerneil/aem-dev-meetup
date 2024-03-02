@@ -11,6 +11,8 @@ main .hero-container {
   padding: 32px;
   min-height: 300px;
 }
+// improve this code to let h2 be aligned to the left of the container
+
 
 .hero h1 {
   max-width: 1200px;
@@ -19,6 +21,15 @@ main .hero-container {
   color: white;
 }
 
+.hero h2 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  color: white;
+}
+
+
 .hero picture {
   position: absolute;
   z-index: -1;
@@ -26,6 +37,8 @@ main .hero-container {
   object-fit: cover;
   box-sizing: border-box;
 }
+// IT SEEMS THE PICTURE IS NOT STRETCHING TO THE FULL WIDTH OF THE CONTAINER
+
 
 .hero picture img {
   width: 100%;
