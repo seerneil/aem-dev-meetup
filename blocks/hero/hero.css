@@ -27,8 +27,7 @@ main .hero-container {
   box-sizing: border-box;
 }
 
-.hero img {
-  object-fit: contain;
-  width: auto;
+.hero picture img {
+  width: 100%;
   height: auto;
 }
