@@ -56,12 +56,12 @@
   object-fit: cover; /* Updated to cover */
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .cards > ul {
-    justify-content: space-between; /* Added justify-content property */
-    flex-wrap: wrap; /* Updated to wrap */
+    flex-wrap: nowrap; /* Updated to nowrap */
   }
-  
+}
+@media (max-width: 900px) {
   .cards > ul > li {
     width: 48%; /* Added width property */
   }
