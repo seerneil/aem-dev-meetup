@@ -22,7 +22,7 @@
 
 .columns-wrapper .special-hero h2 {
   margin-left: 50px;
-  margin-top: 15px;
+  margin-top: 50px;
   margin-bottom: 5px;
   text-align: left;
 }
@@ -76,11 +76,64 @@
   background-color: #FBB738;
   color: black;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .special-header {
+    font-size: 16px;
+    height: 40px;
+  }
+}
+
+@media (width <= 900px) {
+  .columns > div > div {
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    flex-direction: unset;
+    margin-bottom: 20px;
+  }
+
+  .columns-wrapper .special-hero h2,
+  .columns-wrapper .special-hero h3,
+  .columns-wrapper .special-hero .button-container {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .columns-wrapper .special-hero ul {
+    margin-left: 0;
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+  }
+
+  .special-header {
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .columns-wrapper .special-agenda > div .columns-img-col{
+    margin-top: 0px;
+    flex: 1;
+    margin-bottom: 0px;
+  }
+  
+  .columns-wrapper .special-agenda > div > div {
+    margin-top: 0px;
+    background-color: #515BA6; /* Updated background color to blue */
+    color: white;
+    margin-bottom: 0px;
+  }
 }
 
 @media (width >= 900px) {
@@ -190,4 +243,13 @@
 
 .special-quote h3 {
   font-size: 20px;
+}
+
+.columns-wrapper .special-quote .button-container a {
+  color: black;
+  background-color: #FBB738;
+}
+
+.columns-wrapper .special-quote .button-container a:hover {
+  color: white;
 }

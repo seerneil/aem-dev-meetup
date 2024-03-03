@@ -11,7 +11,6 @@
 .cards > ul > li {
   width: 30%; /* Updated to 30% */
   border: none;
-  background-color: white; /* Updated background color to white */
 }
 
 .cards .cards-card-body {
@@ -57,10 +56,13 @@
   object-fit: cover; /* Updated to cover */
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
   .cards > ul {
-    flex-wrap: nowrap; /* Updated to nowrap */
+    justify-content: space-between; /* Added justify-content property */
+    flex-wrap: wrap; /* Updated to wrap */
+  }
+  
+  .cards > ul > li {
+    width: 48%; /* Added width property */
   }
 }
-
-
