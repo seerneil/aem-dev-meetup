@@ -1,3 +1,4 @@
+/*
 footer {
   padding: 2rem;
   background-color: var(--light-color);
@@ -11,4 +12,7 @@ footer .footer {
 
 footer .footer p {
   margin: 0;
+} */
+footer {
+  display: none;
 }

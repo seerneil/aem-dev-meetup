@@ -2,14 +2,16 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
-  grid-gap: 16px;
+  display: flex;
+  flex-wrap: wrap; /* Updated to wrap */
+  justify-content: space-between;
+  gap: 10px; /* Added gap property */
 }
 
 .cards > ul > li {
-  border: 1px solid var(--dark-color);
-  background-color: var(--background-color)
+  width: 30%; /* Updated to 30% */
+  border: none;
+  background-color: white; /* Updated background color to white */
 }
 
 .cards .cards-card-body {
@@ -20,12 +22,45 @@
   line-height: 0;
 }
 
+.cards .cards-card-body > h2 {
+  text-align: right;
+  font-size: 30px;
+}
+
+.cards .cards-card-body > h3 {
+  text-align: right;
+  font-size: 18px;
+}
+
+.cards .cards-card-body > h4 {
+  text-align: right;
+  font-size: 20px; /* Updated to 20px */
+}
+
+.cards .cards-card-body > h5 {
+  text-align: right;
+  font-size: 16px; /* Added h5 font-size */
+}
+
+.cards .cards-card-body > h6 {
+  text-align: right;
+  font-size: 12px; /* Added h6 font-size */
+}
+
 .cards .cards-card-body > *:first-child {
   margin-top: 0;
 }
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  aspect-ratio: 3 / 4;
+  object-fit: cover; /* Updated to cover */
 }
+
+@media (min-width: 900px) {
+  .cards > ul {
+    flex-wrap: nowrap; /* Updated to nowrap */
+  }
+}
+
+
