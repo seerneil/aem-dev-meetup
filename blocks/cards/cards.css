@@ -3,13 +3,13 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Updated to wrap */
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px; /* Added gap property */
+  gap: 10px;
 }
 
 .cards > ul > li {
-  width: 30%; /* Updated to 30% */
+  width: 30%;
   border: none;
 }
 
@@ -33,17 +33,17 @@
 
 .cards .cards-card-body > h4 {
   text-align: right;
-  font-size: 20px; /* Updated to 20px */
+  font-size: 20px;
 }
 
 .cards .cards-card-body > h5 {
   text-align: right;
-  font-size: 16px; /* Added h5 font-size */
+  font-size: 16px;
 }
 
 .cards .cards-card-body > h6 {
   text-align: right;
-  font-size: 12px; /* Added h6 font-size */
+  font-size: 12px;
 }
 
 .cards .cards-card-body > *:first-child {
@@ -53,16 +53,21 @@
 .cards > ul > li img {
   width: 100%;
   aspect-ratio: 3 / 4;
-  object-fit: cover; /* Updated to cover */
+  object-fit: cover;
+}
+
+.special-keynotes-speakers {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 900px) {
   .cards > ul {
-    flex-wrap: nowrap; /* Updated to nowrap */
+    flex-wrap: nowrap;
   }
 }
 @media (max-width: 900px) {
   .cards > ul > li {
-    width: 48%; /* Added width property */
+    width: 48%;
   }
 }

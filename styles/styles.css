@@ -16,13 +16,17 @@
   --link-hover-color: #136ff6;
   --background-color: white;
   --light-color: #f5f8f7;
+  --highlight-color: #515BA6;
   --dark-color: #ccc;
   --text-color: black;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: 'Adobe Clean Medium';
   --heading-font-family: var(--body-font-family);
+  /*
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  */
+  --fixed-font-family: 'Adobe Clean Medium', 'Adobe Clean Regular';
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -40,13 +44,27 @@
   /* nav height */
   --nav-height: 64px;
 }
-
+/*
 @font-face {
   font-family: roboto-fallback;
   size-adjust: 100.06%;
   ascent-override: 95%;
   src: local('Arial');
 }
+*/
+@font-face {
+  font-family: "Adobe Clean Medium";
+  src: url('../fonts/AdobeClean-Medium.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Adobe Clean Regular";
+  src: url('../fonts/AdobeClean-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @media (width >= 900px) {
   :root {
@@ -208,3 +226,8 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+main .section.highlight-header {
+  background-color: #FBB738;
+}
+
