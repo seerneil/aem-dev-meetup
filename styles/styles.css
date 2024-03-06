@@ -212,6 +212,11 @@ main .section {
   main .section {
     padding: 64px 32px;
   }
+
+  main .section.highlight-header {
+    padding: 0px 32px;
+  }
+  
 }
 
 @media (width >= 900px) {
